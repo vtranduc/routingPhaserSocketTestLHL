@@ -8,6 +8,7 @@ import Shop from "./Shop";
 import ItemDetail from "./ItemDetail";
 import Game from "./Game";
 import BallKicking from "./BallKicking";
+import Soccer from "./Soccer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import io from "socket.io-client";
 
@@ -39,6 +40,13 @@ function App() {
               exact
               render={() => {
                 return <BallKicking socket={socket} />;
+              }}
+            />
+            <Route
+              path="/soccer"
+              exact
+              render={() => {
+                return <Soccer socket={socket} />;
               }}
             />
             <Route path="/" exact component={Home} />

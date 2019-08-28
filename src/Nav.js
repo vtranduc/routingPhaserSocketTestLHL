@@ -23,6 +23,9 @@ function Nav() {
         <Link style={navStyle} to="/ballkicking">
           <li>Ball Kicking</li>
         </Link>
+        <Link style={navStyle} to="/soccer">
+          <li>Soccer</li>
+        </Link>
       </ul>
     </nav>
   );

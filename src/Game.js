@@ -5,10 +5,6 @@ let gaming;
 let vector;
 
 export default function Game({ socket }) {
-  // const [game, setGame] = useState(null);
-
-  // const room = "testRoom";
-
   return (
     <Link to="/ballkicking">
       <div>Please click on Ball Kicking instead</div>
